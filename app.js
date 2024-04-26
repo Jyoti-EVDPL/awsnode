@@ -33,7 +33,7 @@ app
     .get('/', (req, res) => {
         res.send('server is running..')
     })
-    .listen(process.env.SERVER_PORT || 3603, () => {
+    .listen(process.env.SERVER_PORT || 3000, () => {
         console.log("successfully connected to the server..")
-        console.log(`Server running in ${process.env.NODE_ENV} mode on port ${process.env.SERVER_PORT || 3602}`.yellow.bold);
+        console.log(`Server running in ${process.env.NODE_ENV} mode on port ${process.env.SERVER_PORT || 3000}`.yellow.bold);
     })
